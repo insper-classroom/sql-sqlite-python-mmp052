@@ -12,9 +12,14 @@ Iremos utilizar a plataforma https://sqliteonline.com/ para treinar comandos SQL
    - **Enunciado**: Liste todos os jogos disponíveis para a plataforma Xbox One. (copie e cole o comando e as 5 primeiras linhas do resultado aqui)
    - **Query**:
      ```sql
-      
+      SELECT Name FROM vgsales_pbi WHERE platform == 'XOne'
      ```
-   - **Resultado**
+   - **Resultado**<br>
+      ReCore<br>
+      Tom Clancy's The Division<br>
+      Valentino Rossi: The Game<br>
+      The Technomancer<br>
+      Dead Island Definitive Collection<br>
     
 
 
@@ -22,9 +27,14 @@ Iremos utilizar a plataforma https://sqliteonline.com/ para treinar comandos SQL
    - **Enunciado**: Liste todos os jogos do gênero "Ação" que foram lançados após 2010.  (copie e cole o comando e as 5 primeiras linhas do resultado aqui)
    - **Query**:
      ```sql
-      
+      SELECT Name FROM vgsales_pbi WHERE Genre == 'Action' AND Year > 2010
      ```
-   - **Resultado**
+   - **Resultado**<br>
+    Brothers Conflict: Precious Baby<br>
+    Lego Star Wars: The Force Awakens<br>
+    Gundam Breaker 3<br>
+    Taiko no Tatsujin: Don Don! Mystery Adventure<br>
+    ReCore<br>
     
 
 
@@ -32,9 +42,14 @@ Iremos utilizar a plataforma https://sqliteonline.com/ para treinar comandos SQL
    - **Enunciado**: Liste os 5 jogos mais recentes lançados.  (copie e cole o comando e as 5 primeiras linhas do resultado aqui)
    - **Query**:
      ```sql
-      
+      SELECT Name FROM vgsales_pbi ORDER BY Year DESC LIMIT 5
      ```
-   - **Resultado**
+   - **Resultado**<br>
+   Imagine: Makeup Artist<br>
+   Phantasy Star Online 2 Episode 4: Deluxe Package<br>
+   Brothers Conflict: Precious Baby<br>
+   Phantasy Star Online 2 Episode 4: Deluxe Package<br>
+   Hyakka Hyakurou: Sengoku Ninpoujou<br>
     
 
 
@@ -52,9 +67,14 @@ Iremos utilizar a plataforma https://sqliteonline.com/ para treinar comandos SQL
    - **Enunciado**: Quais são os 3 jogos do gênero "Aventura" com as maiores vendas na América do Norte?  (copie e cole o comando e as 5 primeiras linhas do resultado aqui)
    - **Query**:
      ```sql
-      
+      SELECT Name FROM vgsales_pbi ORDER BY Year LIMIT 5
      ```
-   - **Resultado**
+   - **Resultado**<br>
+   Bridge<br>
+   Freeway<br>
+   Defender<br>
+   Kaboom!<br>
+   Boxing<br>
     
 
 
@@ -63,9 +83,14 @@ Iremos utilizar a plataforma https://sqliteonline.com/ para treinar comandos SQL
    - **Enunciado**: Liste todos os jogos dos gêneros "RPG" ou "Strategy" lançados após 2005.  (copie e cole o comando e as 5 primeiras linhas do resultado aqui)
    - **Query**:
      ```sql
-      
+      SELECT Name FROM vgsales_pbi WHERE (Genre == 'Role-Playing' or Genre == 'Strategy') and Year > 2005
      ```
-   - **Resultado**
+   - **Resultado**<br>
+   Phantasy Star Online 2 Episode 4: Deluxe Package<br>
+   Phantasy Star Online 2 Episode 4: Deluxe Package<br>
+   Persona 5<br>
+   Caligula<br>
+   The Technomancer<br>
     
 
 
